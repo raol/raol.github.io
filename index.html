@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Just another blog
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<!-- Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
@@ -31,16 +30,44 @@ When you don't need the samples anymore just delete the `_posts/core-samples` fo
     $ rm -rf _posts/core-samples
 
 Here's a sample "posts list".
+-->
 
-<ul class="posts">
+<div class="content post-full">
+  {% for post in paginator.posts %}
+  <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="date">
+    <span>{{post.date | date_to_string}}</span>
+  </div>
+  <div>
+    <div class="content">
+      {{ post.content }}
+    </div>
+  </div>
+  <hr />
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{paginator.previous_page}}" class="next">Next</a>
+  {% else %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="previous ">Previous</a>
+  {% else %}
+  {% endif %}
+</div>
+<div class="page_number ">Page {{paginator.page}} of {{paginator.total_pages}}</div>
+<!-- <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
+</ul> -->
 
+<!--
 ## To-Do
 
 This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
 We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
+-->
 
