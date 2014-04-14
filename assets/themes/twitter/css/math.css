@@ -1,3 +1,11 @@
 .MathJax_Display {
     color: #000 !important;
 }
+
+.MathJax_Display .mi {
+    color: #000 !important;
+}
+
+.MathJax_Display .mo {
+    color: #000 !important;
+}
