@@ -38,7 +38,7 @@ $$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i
 
 **Important point**: all $ \\theta $ values should be udpated simultaneously, i.e. we calculate all new thethas using the old ones first, store them in temporary variables and then at the end of iteration update all theta values.
 
-With each gradient descent step our $ \\theta $ values will be closed to the optimal values and cost function $ J(\\theta) $ will be closer to its minimum.
+With each gradient descent step our $ \\theta $ values will be closer to the optimal values and cost function $ J(\\theta) $ will be closer to its minimum.
 
 Full code of the naive implementation is below.
 
