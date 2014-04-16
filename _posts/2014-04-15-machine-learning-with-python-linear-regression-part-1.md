@@ -14,16 +14,16 @@ facts were forgotten. So it's going to be short and painless.
 
 ### Linear regression
 
-Linear regression is the way to model relatioship between input variables $ X $ and output values $ Y $ using linear function. Our model fits in form
+Linear regression is the way to model relationship between input variables $ X $ and output values $ Y $ using linear function. Our model fits in form
 $$ Y = \\theta\_0 + \\theta\_1\*X\_1 + ... +\\theta\_n\*X\_n $$
 where $ \\theta\_n's $ are coefficients for linear function above.
 So when function is found it's possible to predict $ Y $ value for new $ X $ that does not fall in range of known inputs. 
 
-Suppose you have several stores across the country and going to open couple new ones. You need to estimate how profitable will it be if it's opened in one city or another. The data describing pofit of existing stores are presented below as a bunch of points at the scatter plot
+Suppose you have several stores across the country and going to open couple new ones. You need to estimate how profitable will it be if it's opened in one city or another. The data describing profit of existing stores are presented below as a bunch of points at the scatter plot
 
 ![plain data](/assets/images/linear_regression_1/plain_data.png)
 
-Now linear parameter must be chosen to draw a straight line lying as close to ech point as possible. In other words our goal is to minimize cost function $ J(\\theta) $:
+Now linear parameter must be chosen to draw a straight line lying as close to each point as possible. In other words our goal is to minimize cost function $ J(\\theta) $:
 $$ J(\\theta) = \\frac{1}{2m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)})^2 $$
 where $ h\_\\theta(x) $ is our linear function and paramters are $ \\theta $ values.
 
@@ -36,7 +36,7 @@ it is for the first coefficient $ \\theta\_0 $
 
 $$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)})x^{(i)} \\text{if j > 0} $$
 
-**Important point**: all $ \\theta $ values should be udpated simultaneously, i.e. we calculate all new thethas using the old ones first, store them in temporary variables and then at the end of iteration update all theta values.
+**Important point**: all $ \\theta $ values should be updated simultaneously, i.e. we calculate all new thethas using the old ones first, store them in temporary variables and then at the end of iteration update all theta values.
 
 With each gradient descent step our $ \\theta $ values will be closer to the optimal values and cost function $ J(\\theta) $ will be closer to its minimum.
 
