@@ -3,7 +3,7 @@ layout: post
 title: "Markdown spell check in Sublime"
 description: ""
 category: 
-tags: []
+tags: ["tutorial", "sublime"]
 ---
 {% include JB/setup %}
 
