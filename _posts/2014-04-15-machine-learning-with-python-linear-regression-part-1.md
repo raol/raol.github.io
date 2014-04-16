@@ -7,7 +7,7 @@ tags: ["python", "machine learning"]
 ---
 {% include JB/setup %}
 
-I'm taking cool [Machine Learning](https://www.coursera.org/course/ml) class at Coutrsera, so to get better understanding of the material,
+I'm taking cool [Machine Learning](https://www.coursera.org/course/ml) class at Coursera, so to get better understanding of the material,
 decided to write a series of blog posts about it. As it clear from the post title, I'm going to explain what linear regression is and how it works.
 I don't like to read long-long posts because somewhere in the middle I can't get rid of feeling that the beginning of the post became vague and most of 
 facts were forgotten. So it's going to be short and painless.
