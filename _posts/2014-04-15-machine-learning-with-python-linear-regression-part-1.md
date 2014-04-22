@@ -30,11 +30,11 @@ where $ h\_\\theta(x) $ is our linear function and paramters are $ \\theta $ val
 To find the mininum (global or local, it depends on function) of the function we will use [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) method. It is based on on fact that differentiable function decreases in the gradient direction. So basic formula to adjust $ \\theta $ parameters using batch gradient descend is:
 $$ \\theta\_j = \\theta\_j - \\alpha \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) $$
 If you have taken calculus course it is easy to calculate partial derivative by hand, but don't worry if you didn't get it. Below is calculated derivatives and formula for the $ \\theta\_i $ update.
-$$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)}) \\text{if j = 0} $$
+$$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)}) \\space \\text{if j = 0} $$
 
 it is for the first coefficient $ \\theta\_0 $
 
-$$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)})x^{(i)} \\text{if j > 0} $$
+$$ \\frac{\\partial}{\\partial \\theta\_j} J(\\theta\_j) = \\frac{1}{m}\\sum\_{i=0}^{n} (h\_\\theta(x^{(i)}) - y^{(i)})x\_{j}^{(i)} \\space \\text{if j > 0} $$
 
 **Important point**: all $ \\theta $ values should be updated simultaneously, i.e. we calculate all new thethas using the old ones first, store them in temporary variables and then at the end of iteration update all theta values.
 
