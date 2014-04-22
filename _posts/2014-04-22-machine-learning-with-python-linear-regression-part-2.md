@@ -3,7 +3,7 @@ layout: post
 title: "Machine learning with python. Linear regression. Part 2"
 description: ""
 category: 
-tags: []
+tags: ["python", "machine learning"]
 ---
 {% include JB/setup %}
 
