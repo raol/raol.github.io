@@ -43,3 +43,6 @@ print('Coefficients: Theta_0: {0}, Theta_1: {1}'.format(regr.intercept_[0],  reg
 Pretty easy, isn't it? $ X, Y $ are column vectors, our $ \\theta\_0 $ value returned in the `intercept_` property and
 all other $ \\theta $ values (we have only one for now, since we're dealing with only one variable) are in the `coef_`
 property.
+
+And our model is: $$ h\_\\theta(x) = -3.89578087831 + 1.19303364419*x $$
+which is pretty close to one we got by hand.
