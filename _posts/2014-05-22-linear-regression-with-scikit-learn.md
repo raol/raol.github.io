@@ -17,7 +17,7 @@ and to write gradient descent code for them, lot of time should be spent to solv
 
 We will use [Scikit Learn](http://scikit-learn.org) module. It already has [Linear Regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression) model so we can just pass the data and get our $ \\theta $ values returned.
 
-I don't want to copy/paste module documentation in here, you can open website and read everything. One counterintuitive parts (that was for me, obviously)
+I don't want to copy/paste module documentation in here, you can open website and read everything. Only counterintuitive parts (that were for me, obviously)
 will be explained. Data preparation, vectors...etc are all the same. There is only thing that is differnt. Remember, for our model
 we added $ X\_0 = 1 $ values as first column to get our hypothesis function looks like $ h\_\\theta(x) = \\theta\_0 + \\theta\_1 \* x $ . 
 In scikit learn there is no need to add that column to our data. We just pass $ X $ and $ Y $ column vectors to get model parameters.
