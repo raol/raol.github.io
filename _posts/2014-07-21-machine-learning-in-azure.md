@@ -9,11 +9,11 @@ tags: ["machine learning", "azure"]
 
 It's a really long pause between this post and previous one, but I hope to get pace and write more frequently.
 
-This time we will review new Azure Machine Learning service which was announced recently and will solve this "boring"
+This time we will review new Azure Machine Learning service that was announced recently and will solve that "boring"
 linear regression task (from my previous posts) using the ML service.
 
-First of all it's really cool that anyone is not familiar with machine learning internals and has only tenuous understanding of 
-how it works, can upload data classify/estimate/make predictions. But on the other hand I can't say, that Azure ML is a silver bullet,
+First of all it's really cool that anyone, who is not familiar with machine learning internals and has only tenuous understanding of 
+how it works, can upload data and classify/estimate/make predictions. But on the other hand, I can't say, that Azure ML is a silver bullet,
 at least it was easier to me to code solution in Python than use Azure.
 
 I assume that you familiar with Azure and have trial or paid account there. If not, it worth creating it and playing a little. It's free
@@ -25,7 +25,7 @@ start you analysis. It appears at your Azure dashboard, just click on it, and th
 ![ml-workspace](/assets/images/azure_ml/ml_workspace.png)
 
 To start analysis, we have to create dataset first. Certainly, sample dataset can be used, and Azure provides them for tests and experiments.
-But since we are in context of our previous posts on ML topic, let's use our old dataset. You can download dataset [here](/assets/files/ex1data1.txt)
+But since we are in context of our previous posts on ML topic, let's use our old dataset. You can download dataset [here](/assets/files/ex1data1.txt),
 if you want to repeat my post step by step.
 
 ![create-dataset](/assets/images/azure_ml/create_dataset.png)
@@ -38,7 +38,7 @@ New window looking as at the picture below will be opened and you can finally st
 
 ![create-dataset](/assets/images/azure_ml/new_experiment.png)
 
-First of all we need our dataset. Expand _Saved Datasets_, find it there and drag to the experiment window. Then we need to choose columns
+First of all we need our dataset to be used. Expand _Saved Datasets_, find it there and drag to the experiment window. Then we need to choose columns
 we want operate with, i.e. our feature columns and label column. Drag item _Data Transformations_ -> _Manipulation_ -> _Project Columns_ to the experiment window, click it
 and at the right side of the ML studio in the task properties click _Launch column selector_. Since we have only two columns in our dataset we won't spend
 too much time in the settings window. Choose _Begin With_ -> _All columns_ and remove any error rows that are below this label. Now your experiment window should 
@@ -47,7 +47,6 @@ look like below
 ![create-dataset](/assets/images/azure_ml/experiment_proj_col.png)
 
 Now we have to choose which column we're trying to predict, i.e. label column. To do it, drag _Data Transformation_ -> _Manipulation_ -> _Metadata Editor_. 
-Now your experiment should look like this
 
 ![create-dataset](/assets/images/azure_ml/metadata.png)
 
@@ -67,7 +66,7 @@ Close the window and go to the properties window again and configure following v
 
 By the way, you can play a little with the added data and visualize them to view relationship between features and labels. 
 To do it, point mouse to the output port of the _Dataset_ task, click it and in the drop-down menu choose visualize.
-You can click columns to add them to the plot and in the top of the view, if `compare to` is filled in, relations between columns
+You can click columns to add them to the plot and in the top of the view, if `compare to` is filled in, relation between columns
 is displayed.
 
 ![create-dataset](/assets/images/azure_ml/visualize.png)
