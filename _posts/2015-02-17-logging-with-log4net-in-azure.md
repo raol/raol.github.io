@@ -44,9 +44,9 @@ single line. It's not a big deal as for me. Line breaks are easy to replace.
 
 So it's time to use this configuration in our roles. For worker role we place 
 logging initialization to `WorkerRole.OnStart` method. But for web roles approach
-is a little tricky. Singe our web application (I'm talking about sample MVC project)
+is a little tricky. Since our web application (I'm talking about sample MVC project)
 is running is ASP.NET process, which is completely unrelated to Azure roles, we
-have to initialize logging there.
+have to initialize logging there in the `Global.asax.Application_Start()` method.
 
 ```csharp
 if (RoleEnvironment.IsAvailable)
