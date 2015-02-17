@@ -10,6 +10,8 @@ I was always curious about creating cool ASCII "pictures" from actual images and
 It's fairly simple. What we need to do is to resize image to fit in ASCII console (120 columns) keeping it's original ratio.
 Then convert it to greyscale and map grey level to ASCII symbol. 
 
+<!-- more -->
+
 I decided to keep it simple so there are only 10 grey levels without any symbols randomizations, so white is always `' '` and black is always `@`.
 The whole script is below.
 

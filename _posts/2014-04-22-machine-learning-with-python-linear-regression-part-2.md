@@ -13,6 +13,8 @@ don't get it off hand. Honestly speaking it took some time for me to figure out 
 and even now from time to time I take some paper and draw matrices/vectors to be sure I'm doing 
 everything right.
 
+<!-- more -->
+
 First let's consider fairly simple example. Suppose you were given following column vector:
 $$ 
 \\vec{X} = 

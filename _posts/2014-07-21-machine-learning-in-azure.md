@@ -12,6 +12,8 @@ It's a really long pause between this post and previous one, but I hope to get p
 This time we will review new Azure Machine Learning service that was announced recently and will solve that "boring"
 linear regression task (from my previous posts) using the ML service.
 
+<!-- more -->
+
 First of all it's really cool that anyone, who is not familiar with machine learning internals and has only tenuous understanding of 
 how it works, can upload data and classify/estimate/make predictions. But on the other hand, I can't say, that Azure ML is a silver bullet,
 at least it was easier to me to code solution in Python than use Azure.

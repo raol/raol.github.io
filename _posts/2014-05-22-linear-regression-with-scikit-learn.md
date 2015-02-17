@@ -10,6 +10,8 @@ tags: ["machine learning", "python", "scikit learn"]
 It's been a while since the last post was written. So it's time to create new one. I know, I promised to explain
 how to choose $ \\alpha $ parameter and why it matters, but not this time. 
 
+<!-- more -->
+
 Let's solve our linear regression problem using some libraries which already have all algorithms implemented. It's not necessary
 to implement all stuff manually, because it's easy to make a mistake and sped tons of hours debugging code. With libraries you 
 can just feed the data and get result. Moreover some kind of stuff is not as easy as linear regression (for instance Support Vector Machines)

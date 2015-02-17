@@ -40,7 +40,7 @@ Here's a sample "posts list".
   </div>
   <div>
     <div class="content">
-      {{ post.content }}
+      {{ post.content | split: '<!-- more -->' | first }}
     </div>
   </div>
   <hr />

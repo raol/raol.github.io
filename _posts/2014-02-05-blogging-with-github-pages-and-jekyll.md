@@ -11,6 +11,8 @@ Okay. This is going to be another article about GitHub pages, Jekyll and how to 
 There are plenty of manuals about the topic, but since I'm windows user and spent some time trying to set up everything
 I'm going to describe the process from the very beginning.
 
+<!-- more -->
+
 ### Creating GitHub pages
 
 First of all you need to create a site using GitHub pages. Go to the [http://github.com](http://github.com) and create new repository named **USERNAME.github.io**

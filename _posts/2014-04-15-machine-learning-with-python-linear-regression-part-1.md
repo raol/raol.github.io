@@ -12,6 +12,8 @@ decided to write a series of blog posts about it. As it clear from the post titl
 I don't like to read long-long posts because somewhere in the middle I can't get rid of feeling that the beginning of the post became vague and most of 
 facts were forgotten. So it's going to be short and painless.
 
+<!-- more -->
+
 ### Linear regression
 
 Linear regression is the way to model relationship between input variables $ X $ and output values $ Y $ using linear function. Our model fits in form

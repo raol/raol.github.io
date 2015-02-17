@@ -15,6 +15,8 @@ to predict profit (I'm still talking about previous post with synthetic experime
 based on city population, but, agree, it's not very suitable. It would be nice if you had a way
 to store your trained model and supply data you need to analyze, and get back results.
 
+<!-- more -->
+
 Fortunately guys from Microsoft foresaw, that someone might want to use their ML results 
 at the website, to predict, let's say, what pages with kittens might be interesting to see for 
 certain users. Something like Twitter or Facebook suggestions. So you can run the experiment, save 
