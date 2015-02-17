@@ -9,7 +9,7 @@ tags: ["programming", "azure"]
 
 Though you can configure basic logging for Azure using built in 
 [diagnostic tools](http://azure.microsoft.com/en-us/documentation/articles/cloud-services-dotnet-diagnostics/)
-it's a good idea to have more control about the way log messages are processed. So it might be a good idea
+sometimes it's necessary to have more control on logging. So it might be a good idea
 to use log4net on top of the azure diagnostics and configure it to fit all your needs.
 
 <!-- more -->
