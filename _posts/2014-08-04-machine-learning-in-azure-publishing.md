@@ -1,4 +1,4 @@
----
+    ---
 layout: post
 title: "Machine Learning in Azure. Publishing."
 description: ""
