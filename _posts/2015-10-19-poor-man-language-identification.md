@@ -23,13 +23,15 @@ intersection with the stopwords collection for particular language. The biggest 
 Here [NLTK](http://www.nltk.org/) package will be useful. Let's examine it first.
 
 ```python
->>> nltk.corpus.stopwords.fileids()
-[u'danish', u'dutch', u'english', u'finnish', u'french', u'german', u'hungarian'
-, u'italian', u'norwegian', u'portuguese', u'russian', u'spanish', u'swedish', 
-u'turkish']
+nltk.corpus.stopwords.fileids()
 
->>> nltk.corpus.stopwords.words('english')
-[u'i', u'me', u'my', u'myself', u'we', u'our', u'ours', u'ourselves', u'you' ...]
+#[u'danish', u'dutch', u'english', u'finnish', u'french', u'german', u'hungarian'
+#, u'italian', u'norwegian', u'portuguese', u'russian', u'spanish', u'swedish', 
+#u'turkish']
+
+nltk.corpus.stopwords.words('english')
+
+#[u'i', u'me', u'my', u'myself', u'we', u'our', u'ours', u'ourselves', u'you' ...]
 
 ```
 
