@@ -3,7 +3,7 @@ layout: post
 title: "Poor man language identification."
 description: ""
 category: 
-tags: ["programming", "nlp", "nltk"]
+tags: ["programming", "nlp", "nltk" ]
 ---
 {% include JB/setup %}
 
